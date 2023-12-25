@@ -6,7 +6,6 @@ import app from '../app';
 describe('GET /api/endpoint', () => {
   test('responds with JSON', async () => {
     const response = await request(app).get('/api/tree');
-
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty('message', 'GET request successful');
   });
